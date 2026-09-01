@@ -1,0 +1,100 @@
+.contact-callout-wrapper {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 24px 16px;
+  box-sizing: border-box;
+}
+
+.contact-callout-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  background-color: #080a0f;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 14px;
+  padding: 24px 28px;
+  gap: 20px;
+}
+
+/* Alineación horizontal en monitores/laptops */
+@media (min-width: 768px) {
+  .contact-callout-card {
+    flex-direction: row;
+    align-items: center;
+  }
+}
+
+.contact-info-side {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+/* Ícono del avión de papel con caja de borde suave */
+.paper-plane-icon-bg {
+  width: 48px;
+  height: 48px;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background-color: rgba(255, 255, 255, 0.02);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.plane-icon {
+  color: #e0e0e0;
+  /* Rotación ligera para emular el ángulo de la imagen */
+  transform: rotate(-10deg);
+}
+
+.contact-text-content {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.contact-title {
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: #ffffff;
+  margin: 0;
+}
+
+.contact-subtitle {
+  font-size: 0.9rem;
+  color: #a0a5b5;
+  margin: 0;
+}
+
+/* Botón Violeta de Contáctame */
+.btn-contact-callout {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background-color: rgb(111, 95, 255);
+  color: #ffffff;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+@media (min-width: 768px) {
+  .btn-contact-callout {
+    width: auto;
+  }
+}
+
+.btn-contact-callout:hover {
+  opacity: 0.9;
+  transform: translateY(-2px);
+}

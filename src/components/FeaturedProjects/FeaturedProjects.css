@@ -1,0 +1,212 @@
+.projects-section-wrapper {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 32px 16px;
+  box-sizing: border-box;
+}
+
+/* --- Cabecera de la Sección --- */
+.projects-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 28px;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.section-title {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.folder-icon-bg {
+  background-color: rgb(119, 95, 255);
+  padding: 8px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.section-title h2 {
+  font-size: 1.5rem;
+  color: #ffffff;
+  margin: 0;
+  font-weight: 600;
+}
+
+.btn-all-github {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background-color: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  color: #ffffff;
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  text-decoration: none;
+  transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+
+.btn-all-github:hover {
+  background-color: rgba(255, 255, 255, 0.08);
+  border-color: rgba(255, 255, 255, 0.3);
+}
+
+/* --- Grilla de Proyectos --- */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 24px;
+}
+
+/* --- Tarjeta Individual --- */
+.project-card {
+  background-color: #080a0f;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 14px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: border-color 0.2s ease, transform 0.2s ease;
+}
+
+.project-card:hover {
+  border-color: rgba(119, 95, 255, 0.4);
+  transform: translateY(-4px);
+}
+
+.project-image-container {
+  width: 100%;
+  height: 200px;
+  background-color: #030406;
+  overflow: hidden;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.project-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.project-content {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+/* Título y Badge */
+.project-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.project-title {
+  font-size: 1.15rem;
+  color: rgb(130, 110, 255);
+  margin: 0;
+  font-weight: 600;
+}
+
+.status-badge {
+  font-size: 0.75rem;
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.status-badge.production {
+  background-color: rgba(16, 185, 129, 0.12);
+  color: #10b981;
+  border: 1px solid rgba(16, 185, 129, 0.25);
+}
+
+.status-badge.development {
+  background-color: rgba(245, 158, 11, 0.12);
+  color: #f59e0b;
+  border: 1px solid rgba(245, 158, 11, 0.25);
+}
+
+.project-description {
+  font-size: 0.88rem;
+  color: #a0a5b5;
+  line-height: 1.5;
+  margin: 0 0 16px 0;
+  flex: 1; /* Mantiene la misma altura en todas las tarjetas */
+}
+
+/* Íconos de Stack */
+.project-tech-icons {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 16px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.tech-icon-img {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+}
+
+/* Link a Demo en Vivo */
+.demo-link-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 14px;
+}
+
+.demo-url-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: #7d8bb2;
+  font-size: 0.9rem;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.demo-url-link:hover {
+  color: rgb(130, 110, 255);
+}
+
+/* Botones Backend / Frontend */
+.code-links-container {
+  display: flex;
+  gap: 10px;
+}
+
+.btn-code {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  background-color: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: #e0e0e0;
+  padding: 8px 10px;
+  border-radius: 6px;
+  font-size: 0.8rem;
+  text-decoration: none;
+  transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+
+.btn-code:hover {
+  background-color: rgba(119, 95, 255, 0.15);
+  border-color: rgba(119, 95, 255, 0.4);
+  color: #ffffff;
+}

@@ -1,0 +1,21 @@
+.hero-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 15px;
+  justify-content: left;
+  margin-bottom: 0%;
+  margin-left: 30px;
+  margin-bottom: 50px;
+}
+.hero-container img {
+  width: 70px;
+  height: 70px;
+  border-radius: 100%;
+}
+.hero-container h1 {
+  font-weight: 400;
+}
+body {
+  background-color: black;
+}
