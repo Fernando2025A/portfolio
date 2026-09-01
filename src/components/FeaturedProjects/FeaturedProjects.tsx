@@ -62,7 +62,7 @@ const PROJECTS: Project[] = [
     description:
       "Juego basado en productos con comportamientos, carrito, generador de dinero progresivo, inventario y tiempos de envío. Experiencia gamificada completa.",
     image: ecommerceImg,
-    demoUrl: "https://ferdevx.com",
+    demoUrl: "https://shop.ferdevx.com",
     githubFrontend: "https://github.com/Fernando2025A/shop-frontend",
     githubBackend: "https://github.com/Fernando2025A/shop-backend",
     techIcons: [

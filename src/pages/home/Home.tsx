@@ -9,7 +9,6 @@ export function Home() {
   return (
     <div>
       <HeroSection />
-      <ContactCallout />
       <FeaturedProjects />
       <WhyWorkWithMe />
       <ContactCallout />
